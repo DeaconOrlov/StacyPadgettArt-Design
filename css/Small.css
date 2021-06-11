@@ -4,11 +4,18 @@ and (max-device-width : 480px) {
     ul {
         display: flex;
         list-style-type: none;
-        background-color: darkgreen;
+        background-color: lightgreen;
+        Justify-content: space-evenly;
+                
     }
 
     ui li {
         
+               
+    }
+
+    #hero {
+          display: flex;
     }
 }
 
