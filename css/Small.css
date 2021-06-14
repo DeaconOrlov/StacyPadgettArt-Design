@@ -34,9 +34,17 @@ and (max-device-width : 768px) {
         height: 25vh;
         margin: 5%;
         text-align: center;
-
-
     }
+
+    #galleryBox {
+        background-color: lightcoral;
+        max-width: 90%;
+        height: 60vh;
+        margin: 5%
+    }
+
+
+    
 
     footer {
         display: flex;
