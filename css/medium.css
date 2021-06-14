@@ -22,9 +22,10 @@ and (max-device-width : 1024px) {
         margin: 0px 0px 25px 0px;
         padding: 0px;
     
-
+    }    
     #hero {
         display: flex;
         max-width: 90%;
         margin: 5%;
-  }
+    }
+}
