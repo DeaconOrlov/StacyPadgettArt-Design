@@ -28,4 +28,11 @@ and (max-device-width : 1024px) {
         max-width: 90%;
         margin: 5%;
     }
+
+    #galleryBox {
+        background-color: lightcoral;
+        max-width: 90%;
+        height: 60vh;
+        margin: 5%
+    }
 }
