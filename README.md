@@ -1,10 +1,9 @@
 ![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
 
-# Name of the project
-> Additional information or tagline
+# Stacy Padgett Art & Design
+> A Gallery and Commision portal
 
-A brief description of your project, what it is used for and how does life get
-awesome when someone starts to use it.
+This is my final projext for the Code Louisville 2021 Monday FEWB class.
 
 ## Installing / Getting started
 
