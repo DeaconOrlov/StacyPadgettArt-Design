@@ -39,26 +39,27 @@ nav ul {
     flex-direction: column;
     margin: 0;
     padding: 1rem;
-    align-items: center;
-   
+       
 }
 
 nav ul li {
     list-style-type: none;
-    padding: 1rem;     
+    padding: 1rem;   
+    min-width: 100vw;  
+    text-align: center;
 }
 
-nav a.active {
-    background-color: rgba(0,0,0.5);
+.current {
+    background-color: rgba(0,0,0,.50);
 }
 
 nav a {
     text-decoration: none;
     color: #000;
-      
+         
 }
 
-nav a:hover {
+nav li:hover {
     background-color: rgba(0, 0, 0, .3);
 }
 
@@ -119,9 +120,26 @@ footer {
 /* Medium Screens */
 
 @media screen and (min-width: 641px) {
-    
 
+button#hamburgerBtn {
+    display: none;
+}
 
+nav>ul {
+    display: flex;
+    min-width: 25vw;
+    max-width: 25vw;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: lightgreen;
+   
+  
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+}
+}
 
 .galleryFrame {   
     
@@ -130,20 +148,6 @@ footer {
     
     
     
-}
-
-nav>ul {
-    display: flex;
-    list-style-type: none;
-    background-color: lightgreen;
-    Justify-content: space-evenly;
-    margin: 0px 0px 25px 0px;
-    padding: 0px;  
-}
-
-nav>ul>li>a {
-    text-decoration: none;
-}
 }
 
 
