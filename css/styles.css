@@ -45,7 +45,7 @@ nav ul {
 nav ul li {
     list-style-type: none;
     padding: 1rem;   
-    min-width: 100vw;  
+   
     text-align: center;
 }
 
@@ -62,6 +62,8 @@ nav a {
 nav li:hover {
     background-color: rgba(0, 0, 0, .3);
 }
+
+
 
 nav ul.open {display: flex;}
 nav ul {display: none;}
@@ -82,18 +84,17 @@ nav ul {display: none;}
 }
 
 #galleryBox {
-    display: flex;     
-    max-width: 90%;
+    display: flex; 
+    min-width: 90%;
     height: auto;
-    flex-basis: 100%;
     flex-wrap: wrap;
     margin: 5% 
 }
 
 .galleryFrame {
-    
-    margin: .4rem;
+    display: flex;
     width: 100%;
+    padding: .4rem;
     height: auto;
     background-color: lightblue;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
@@ -125,29 +126,33 @@ button#hamburgerBtn {
     display: none;
 }
 
-nav>ul {
+nav ul {
     display: flex;
-    min-width: 25vw;
-    max-width: 25vw;
     flex-direction: row;
     align-items: flex-start;
     background-color: lightgreen;
-   
-  
+    
 }
 
-nav>ul>li>a {
+nav ul li a {
     text-decoration: none;
 }
+
+
+#galleryBox {   
+    
+    max-width: 33%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+            
 }
 
-.galleryFrame {   
-    
-    width: 24%;
-    flex-direction: row;
-    
-    
-    
+.galleryFrame {
+    max-width: 30%;
+    background-color: red;
+}
+
 }
 
 
@@ -155,5 +160,13 @@ nav>ul>li>a {
 
 @media screen and (min-width: 1008px){
 
+    #galleryBox {
+        align-self: center;
+    }
+
+    .galleryFrame {
+        max-width: 22%;
+        background-color: yellow;
+    }
 
 }
