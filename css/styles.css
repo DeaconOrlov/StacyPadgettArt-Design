@@ -1,4 +1,12 @@
 
+* {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -45,7 +53,7 @@ nav ul {
 nav ul li {
     list-style-type: none;
     padding: 1rem;   
-   
+    width: 100vw;
     text-align: center;
 }
 
@@ -102,20 +110,76 @@ nav ul {display: none;}
 }
 
 
-
-
 footer {
+    background-color: rgb(50, 150,0);
+    color: #000;
+    line-height: 1.5;
+  }
+  footer a {
+    text-decoration: none;
+    color: #000;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .ft-title {
+    color: #444;
+    font-family: "Merriweather", serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+  }
+  /* Sticks footer to bottom */
+  body {
     display: flex;
-    margin-top: auto;
-    flex-direction: row;
-    justify-content: center;
-    min-width: 100vw;
-    min-height: 15vh;
-    background-color: lightseagreen;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .container {
+    flex: 1;
+  }
+  /* Footer main */
+  .ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media only screen and (min-width: 29.8125rem /* 477px */) {
+    .ft-main {
+      justify-content: space-evenly;
+    }
+  }
+  @media only screen and (min-width: 77.5rem /* 1240px */) {
+    .ft-main {
+      justify-content: space-evenly;
+    }
+  }
+  .ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+  }
+  
+  /* Footer legal */
+  .ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: darkgreen;
+  }
+  .ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+  }
+  /* one before the last child */
+  .ft-legal-list li:nth-last-child(2) {
+      flex: 1;
+  }
+
+
     
-    margin: 0;
-    padding: 0;
-}
+
 
 
 /* Medium Screens */
@@ -134,14 +198,18 @@ nav ul {
     
 }
 
+nav ul li {
+    width:25%;
+}
+
 nav ul li a {
     text-decoration: none;
 }
 
 
 #galleryBox {   
-    
     max-width: 33%;
+    height: auto;
     flex-direction: row;
     flex-wrap: wrap;
     
@@ -150,6 +218,7 @@ nav ul li a {
 
 .galleryFrame {
     max-width: 30%;
+    height: auto;
     background-color: red;
 }
 
