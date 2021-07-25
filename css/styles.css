@@ -177,8 +177,16 @@ footer {
       flex: 1;
   }
 
+#contactForm {
+  display: flex;
+  flex-direction:column;
+}
 
-    
+textarea {
+  margin:0 10vw 0 10vw;
+  width: 80vw;
+  color: blue;
+}
 
 
 
