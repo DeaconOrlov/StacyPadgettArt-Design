@@ -19,31 +19,64 @@
             <li> <a href="blog.html">Blog</a></li>
         </ul>
     </nav>
-    <p>Please fill out hte form below depending on whether you wish to make a general comment or to place a commision.  When you have filled in the form press submit to email it to us!</p>
-    <div class="contactForm">
-        <form>
-            <label for="fName">First Name</label>
-              <input type="text" id="fName" name="fName">
-            <label for="lName" >Last Name</label>
-              <input type="text" id="lName" name="lName">
-            <label for="eAddress">Email Address</label>
-              <input type="text" id="eAddress" name="eAddress">
-            <label for="rComment">Comment</label> 
-              <input type="radio" id="rComment" name="rComment">
-            <label for="rCommission">Commission</label> 
-              <input type="radio" id="rCommision" name="rCommission">
+    <p id="formInstruction">Please fill out the form below depending on whether you wish to make a general comment or to place a commision.  When you have filled in the form press submit to email it to us!</p>
+    <div class="contact">
+        <form name="contactForm">
+            <label for="fName">First Name<input type="text" id="fName" name="fName"></label>
+            <label for="lName" >Last Name<input type="text" id="lName" name="lName"></label>
+            <label for="eAddress">Email Address<input type="text" id="eAddress" name="eAddress"></label>
+            <label><input name="commentType" id="rcomment" type="radio" checked="checked">Comment</label>
+            <label><input name="commentType" id="rCommission" type="radio">Commision</label>
             <textarea name="commentsBody" rows="10" columns="10">Please enter your comments here.</textarea>
-            <textarea name="commissionBody" rows="10" columns="10">Please enter your commission details here.</textarea>
-            <label for="budget">Budget Range</label>
-              <input type="text" id="budget" name="budget">
-            <input type="submit">
+            <div id="commissionField">
+              <textarea name="commissionBody" rows="10" columns="10">Please enter your commission details here.</textarea>
+              <label for="budget">Budget Range<input type="text" id="budget" name="budget"></label>
+            </div>   
+            <input type="submit" onclick="ValidateEmail(document.contactForm.eAddress)">
+            <input type="reset">
         </form>    
     </div>
     <script src="js/scripts.js"></script>  
 </body>
+<div class="container"></div>
 <footer>
-   <p>Copyright Information</p> 
-   <p>Contact</p>
-   <p>Site Navigation</p>
+    <!-- Footer main -->
+    <section class="footMain">
+        <div class="footMain-item">
+            <h2 class="footTitle">Navigation</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footMain-item">
+            <h2 class="footTitle">Contact</h2>
+            <ul>
+                <li>PH# (555)555-5555</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">eBooks</a></li>
+                <li><a href="#">Webinars</a></li>
+            </ul>
+        </div>
+        <div class="footMain-item">
+            <h2 class="footTitle">Contact</h2>
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Advertise</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer legal -->
+    <section class="footLegal">
+        <ul class="footLegal-list">
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li>&copy; 2019 Copyright Nowrap Inc.</li>
+        </ul>
+    </section>
 </footer>
 </html>

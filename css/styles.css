@@ -6,6 +6,23 @@
     padding: 0;
   }
 
+#titleBar {
+  display: flex;
+  background-color: cornsilk;
+  padding: 5px;
+  margin: 0;
+  align-items: center;
+}
+
+
+
+#titleBar img {
+  width: 100px;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+}
 
 body {
     display: flex;
@@ -14,12 +31,9 @@ body {
     margin: 0;
 }
 
-body h1 {
-    background-color: cornsilk;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
+
+
+
 
 /* Begin Nav Styling*/
 
@@ -110,85 +124,94 @@ nav ul {display: none;}
 }
 
 
-footer {
-    background-color: rgb(50, 150,0);
-    color: #000;
-    line-height: 1.5;
-  }
-  footer a {
-    text-decoration: none;
-    color: #000;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  .ft-title {
-    color: #444;
-    font-family: "Merriweather", serif;
-    font-size: 1.375rem;
-    padding-bottom: 0.625rem;
-  }
-  /* Sticks footer to bottom */
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-  .container {
-    flex: 1;
-  }
-  /* Footer main */
-  .ft-main {
-    padding: 1.25rem 1.875rem;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @media only screen and (min-width: 29.8125rem /* 477px */) {
-    .ft-main {
-      justify-content: space-evenly;
-    }
-  }
-  @media only screen and (min-width: 77.5rem /* 1240px */) {
-    .ft-main {
-      justify-content: space-evenly;
-    }
-  }
-  .ft-main-item {
-    padding: 1.25rem;
-    min-width: 12.5rem;
-  }
-  
-  /* Footer legal */
-  .ft-legal {
-    padding: 0.9375rem 1.875rem;
-    background-color: darkgreen;
-  }
-  .ft-legal-list {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .ft-legal-list li {
-    margin: 0.125rem 0.625rem;
-    white-space: nowrap;
-  }
-  /* one before the last child */
-  .ft-legal-list li:nth-last-child(2) {
-      flex: 1;
-  }
 
-#contactForm {
+
+.contact {
   display: flex;
-  flex-direction:column;
+  flex-direction:column; 
+  margin-top: 50px;
+ 
 }
 
 textarea {
   margin:0 10vw 0 10vw;
   width: 80vw;
-  color: blue;
+ 
+}
+
+#commissionField {
+  display: none;
+}
+
+#commissionField.show {
+  display: flex;
+  flex-direction: column;
 }
 
 
+
+
+footer {
+  background-color: rgb(50, 150,0);
+  color: #000;
+  line-height: 1.5;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footTitle {
+  color: #444;
+  font-family: "Merriweather", serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+
+.container {
+  flex: 1;
+}
+/* Footer main */
+.footMain {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+  .footMain {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+  .footMain {
+    justify-content: space-evenly;
+  }
+}
+.footMain-item {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+/* Footer legal */
+.footLegal {
+  padding: 0.9375rem 1.875rem;
+  background-color: darkgreen;
+}
+.footLegal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footLegal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+/* one before the last child */
+.footLegal-list li:nth-last-child(2) {
+    flex: 1;
+}
 
 /* Medium Screens */
 
