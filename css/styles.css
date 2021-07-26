@@ -1,10 +1,13 @@
+/* General Styling */
 
 * {
-    box-sizing: border-box;
-    font-family: "Lato", sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner Styling */
 
 #titleBar {
   display: flex;
@@ -14,7 +17,9 @@
   align-items: center;
 }
 
-
+#titleBar h1 {
+  font-family: "Merriweather", serif;
+}
 
 #titleBar img {
   width: 100px;
@@ -24,119 +29,115 @@
   border-radius: 50%;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
 
-
-
-
-
-/* Begin Nav Styling*/
+/* Nav Styling */
 
 button#hamburgerBtn {
-    display: flex;
-    background: none;
-    border: none;
-    color: #000;
-    background-color: lightgreen;
-    font-size: 2.0rem;
-    cursor: pointer;
-    padding: 0 30px 0 2vw;
-    flex-direction: row;
+  display: flex;
+  background: none;
+  border: none;
+  color: #000;
+  background-color: lightgreen;
+  font-size: 2.0rem;
+  cursor: pointer;
+  padding: 0 30px 0 2vw;
+  flex-direction: row;
 }
 
 nav {
-    display: flex;
-    background-color: lightgreen;
-    justify-content: center;
+  display: flex;
+  background-color: lightgreen;
+  justify-content: center;
 }
 
-
 nav ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 1rem;
-       
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0rem;
+
 }
 
 nav ul li {
-    list-style-type: none;
-    padding: 1rem;   
-    width: 100vw;
-    text-align: center;
+  list-style-type: none;
+  padding: 1.25rem;
+  width: 100vw;
+  text-align: center;
 }
 
 .current {
-    background-color: rgba(0,0,0,.50);
+  background-color: rgba(0, 0, 0, .50);
 }
 
 nav a {
-    text-decoration: none;
-    color: #000;
-         
+  text-decoration: none;
+  color: #000;
+
 }
 
 nav li:hover {
-    background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, .3);
 }
 
+nav ul.open {
+  display: flex;
+}
 
+nav ul {
+  display: none;
+}
 
-nav ul.open {display: flex;}
-nav ul {display: none;}
+/* Body Styling */
 
-/* End Nav Styling */
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
 
 #hero {
-    max-width: 90%;
-    margin: 5%;
+  max-width: 90%;
+  margin: 5%;
 }
 
-#mediaFeed {     
-    background-color: lightcoral;
-    max-width: 90%;
-    height: 25vh;
-    margin: 5%;
-    text-align: center;
+#mediaFeed {
+  background-color: lightcoral;
+  max-width: 90%;
+  height: 25vh;
+  margin: 5%;
+  text-align: center;
 }
 
 #galleryBox {
-    display: flex; 
-    min-width: 90%;
-    height: auto;
-    flex-wrap: wrap;
-    margin: 5% 
+  display: flex;
+  min-width: 90%;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 5%
 }
 
 .galleryFrame {
-    display: flex;
-    width: 100%;
-    padding: .4rem;
-    height: auto;
-    background-color: lightblue;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  display: flex;
+  width: 100%;
+  padding: .4rem;
+  height: auto;
+  background-color: lightblue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
 
 }
-
-
-
 
 .contact {
   display: flex;
-  flex-direction:column; 
+  flex-direction: column;
   margin-top: 50px;
- 
+
 }
 
 textarea {
-  margin:0 10vw 0 10vw;
+  margin: 0 10vw 0 10vw;
   width: 80vw;
- 
+
 }
 
 #commissionField {
@@ -148,21 +149,23 @@ textarea {
   flex-direction: column;
 }
 
-
-
+/* Footer Styling */
 
 footer {
-  background-color: rgb(50, 150,0);
+  background-color: rgb(50, 150, 0);
   color: #000;
   line-height: 1.5;
 }
+
 footer a {
   text-decoration: none;
   color: #000;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 .footTitle {
   color: #444;
   font-family: "Merriweather", serif;
@@ -172,101 +175,129 @@ a:hover {
 
 .container {
   flex: 1;
+  align-content: center;
 }
-/* Footer main */
+
 .footMain {
   padding: 1.25rem 1.875rem;
   display: flex;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 29.8125rem /* 477px */) {
-  .footMain {
-    justify-content: space-evenly;
-  }
-}
-@media only screen and (min-width: 77.5rem /* 1240px */) {
-  .footMain {
-    justify-content: space-evenly;
-  }
-}
+
 .footMain-item {
   padding: 1.25rem;
   min-width: 12.5rem;
 }
 
+.footMain-item img {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+  border-radius: .5rem 0rem 0rem .5rem;
+}
+
+input[type="submit"] {
+  background-color: #ced100;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+  border-radius: 0rem .5rem .5rem 0rem;
+}
+
 /* Footer legal */
 .footLegal {
-  padding: 0.9375rem 1.875rem;
+  padding: 1rem 1.75rem;
   background-color: darkgreen;
 }
+
 .footLegal-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+
 .footLegal-list li {
   margin: 0.125rem 0.625rem;
   white-space: nowrap;
 }
+
 /* one before the last child */
 .footLegal-list li:nth-last-child(2) {
-    flex: 1;
+  flex: 1;
 }
 
 /* Medium Screens */
 
 @media screen and (min-width: 641px) {
 
-button#hamburgerBtn {
+  button#hamburgerBtn {
     display: none;
-}
+  }
 
-nav ul {
+  nav ul {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     background-color: lightgreen;
-    
-}
 
-nav ul li {
-    width:25%;
-}
+  }
 
-nav ul li a {
+  nav ul li {
+    width: 25%;
+  }
+
+  nav ul li a {
     text-decoration: none;
-}
+  }
 
 
-#galleryBox {   
+  #galleryBox {
     max-width: 33%;
     height: auto;
     flex-direction: row;
     flex-wrap: wrap;
-    
-            
-}
 
-.galleryFrame {
+
+  }
+
+  .galleryFrame {
     max-width: 30%;
     height: auto;
-    background-color: red;
-}
+  }
+
+  .footMain {
+    justify-content: space-around;
+  }
 
 }
 
 
 /* Large Screens */
 
-@media screen and (min-width: 1008px){
+@media screen and (min-width: 1008px) {
 
-    #galleryBox {
-        align-self: center;
-    }
+  #galleryBox {
+    align-self: center;
+  }
 
-    .galleryFrame {
-        max-width: 22%;
-        background-color: yellow;
-    }
+  .galleryFrame {
+    max-width: 22%;
+  }
 
+  .footMain {
+    justify-content: space-evenly;
+  }
 }
