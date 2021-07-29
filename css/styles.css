@@ -14,8 +14,14 @@
   background-color: cornsilk;
   padding: 5px;
   margin: 0;
-  align-items: center;
+  justify-content: center;
 }
+
+#titleBar:first-child {
+  justify-content: left;
+}
+
+
 
 #titleBar h1 {
   font-family: "Merriweather", serif;
@@ -27,6 +33,7 @@
   margin: 0;
   padding: 0;
   border-radius: 50%;
+  justify-self: flex-start;
 }
 
 
@@ -104,9 +111,12 @@ body {
 #mediaFeed {
   background-color: lightcoral;
   max-width: 90%;
-  height: 25vh;
+  height: auto;
   margin: 5%;
+  padding: 5%;
   text-align: center;
+  align-content: center;
+  border-radius: 15px;
 }
 
 #galleryBox {
@@ -120,11 +130,11 @@ body {
 .galleryFrame {
   display: flex;
   width: 100%;
-  padding: .4rem;
+  padding: .10rem;
   height: auto;
-  background-color: lightblue;
+  
   box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-
+  border-radius: 5px;
 }
 
 .contact {
@@ -182,6 +192,7 @@ a:hover {
   padding: 1.25rem 1.875rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .footMain-item {
@@ -192,6 +203,7 @@ a:hover {
 .footMain-item img {
   background-color: #fff;
   border-radius: 50%;
+  
 }
 
 form {
@@ -200,7 +212,7 @@ form {
 
 }
 
-input[type="email"] {
+input[type="text"] {
   border: 0;
   padding: 0.625rem;
   margin-top: 0.3125rem;
@@ -256,7 +268,8 @@ input[type="submit"] {
   }
 
   nav ul li {
-    width: 25%;
+    width: 33%;
+    padding: 1rem 2rem 1rem 2rem;
   }
 
   nav ul li a {
@@ -269,12 +282,10 @@ input[type="submit"] {
     height: auto;
     flex-direction: row;
     flex-wrap: wrap;
-
-
   }
 
   .galleryFrame {
-    max-width: 30%;
+    max-width: 33%;
     height: auto;
   }
 
@@ -288,15 +299,28 @@ input[type="submit"] {
 /* Large Screens */
 
 @media screen and (min-width: 1008px) {
+  
+  nav ul li {
+    width: 33%;
+    padding: .75rem 5rem .75rem 5rem;
+  }
+
+  #mediaFeed {
+    margin: 5% 15% 5% 15%;
+  }
 
   #galleryBox {
-    align-self: center;
+    justify-content: center;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .galleryFrame {
     max-width: 22%;
   }
 
+  
   .footMain {
     justify-content: space-evenly;
   }

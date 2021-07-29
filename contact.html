@@ -24,16 +24,10 @@
     <p id="formInstruction">Please fill out the form below depending on whether you wish to make a general comment or to place a commision.  When you have filled in the form press submit to email it to us!</p>
     <div class="contact">
         <form name="contactForm" action="MALTO:deaconorlov@gmail.com">
-            <label for="fName">First Name<input type="text" id="fName" name="fName"></label>
-            <label for="lName" >Last Name<input type="text" id="lName" name="lName"></label>
+            <label for="fName">Name<input type="text" id="fName" name="fName"></label>
+            
             <label for="eAddress">Email Address<input type="text" id="eAddress" name="eAddress"></label>
-            <label><input name="commentType" id="rcomment" type="radio" checked="checked">Comment</label>
-            <label><input name="commentType" id="rCommission" type="radio">Commision</label>
-            <textarea name="commentsBody" rows="10" columns="10">Please enter your comments here.</textarea>
-            <div id="commissionField">
-              <textarea name="commissionBody" rows="10" columns="10">Please enter your commission details here.</textarea>
-              <label for="budget">Budget Range<input type="text" id="budget" name="budget"></label>
-            </div>   
+       
             <input type="submit" onclick="ValidateEmail(document.contactForm.eAddress)">
             <input type="reset">
         </form>    

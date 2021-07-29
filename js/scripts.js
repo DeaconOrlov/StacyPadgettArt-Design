@@ -9,23 +9,14 @@ const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0
 
     if(inputText.value.match(mailformat)) {
         alert("Valid email address!");
-        document.commentForm.eAddress.focus();
+        document.footer.commentForm.eAddress.focus();
         return true;
     }
     else {
         alert("You have entered an invalid email address!");
-        document.commentForm.eAddress.focus();
+        document.footer.commentForm.eAddress.focus();
         return false;
     }
 }
 
-function ToggleComment() {
-    const radios = document.getElementByName(commentType);
-    for (i = 0; i < radios.length; i++) {
-        if (radios[i].checked) {
-            return radios[i].value;
-        }
-    }
-    return null;
-}
 
