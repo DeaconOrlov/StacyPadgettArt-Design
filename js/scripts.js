@@ -9,12 +9,12 @@ const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0
 
     if(inputText.value.match(mailformat)) {
         alert("Valid email address!");
-        document.footer.commentForm.eAddress.focus();
+        document.commentForm.eAddress.focus();
         return true;
     }
     else {
         alert("You have entered an invalid email address!");
-        document.footer.commentForm.eAddress.focus();
+        document.commentForm.eAddress.focus();
         return false;
     }
 }
